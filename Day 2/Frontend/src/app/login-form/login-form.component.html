@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="header"><h2>Login</h2></div>
+    <form (ngSubmit)="submit()">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                [(ngModel)]="user_email" name="email">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" [(ngModel)]="user_password"
+                name="password">
+                 <input type="checkbox" id="check-box">
+                <label for="check-box" class="check-box">Reminder Me!</label>
+               
+                 <a href="123">Forget-Password</a>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+       
+    </form>
+</div>
